@@ -13,9 +13,9 @@ Time spent: **3** hours spent in total
 	- Alternatively, **detailed** notes added to the `README.md` regarding the setup, requirements, features, etc.
 
 ## Setup
-```
-For this project, I set up  a low-interaction honeypots on a telnet port (port 23) from my kali linux VM. To do this, I dowloaded and configured a saftey kit application/IDS called "PenTBox". I followed the honeypot installation guide from www.iexplo1t.com. First step was to install the pentbox-1.8 by using the wget command: wget http://downloads.sourceforge.net/project/pentbox18realised/pentbox-1.8.tar.gz. The next step is to uncompress the pentbox files by using the following command: tar -zxvf pentbox-1.8.tar.gz. Once that is done, go into pentbo-1.8 directory and run the pentbox's ruby script called: pentbox.rb. </br></br>Next part is to configure the honeypot. On the first menu screen, type "2" to select the option 2-Network tools. On the second menu, type "3" to select Honeypot. You need to select "2-Manual Configuration" In order to configure a honeypot on the telnet so type "2". Now for the configuration, type "21" to specify telnet port (port 21), insert any false message to display to the attacker, type "y" to save an intrusion log, and type "n" to deactivate the beeping sound.
-```
+
+    For this project, I set up  a low-interaction honeypots on a telnet port (port 23) from my kali linux VM. To do this, I dowloaded and configured a saftey kit application/IDS called "PenTBox". I followed the honeypot installation guide from www.iexplo1t.com. First step was to install the pentbox-1.8 by using the wget command: wget http://downloads.sourceforge.net/project/pentbox18realised/pentbox-1.8.tar.gz. The next step is to uncompress the pentbox files by using the following command: tar -zxvf pentbox-1.8.tar.gz. Once that is done, go into pentbo-1.8 directory and run the pentbox's ruby script called: pentbox.rb. Next part is to configure the honeypot. On the first menu screen, type "2" to select the option 2-Network tools. On the second menu, type "3" to select Honeypot. You need to select "2-Manual Configuration" In order to configure a honeypot on the telnet so type "2". Now for the configuration, type "21" to specify telnet port (port 21), insert any false message to display to the attacker, type "y" to save an intrusion log, and type "n" to deactivate the beeping sound.
+
 
 ### Required: Demonstration
 
@@ -24,10 +24,9 @@ For this project, I set up  a low-interaction honeypots on a telnet port (port 2
 - [x] A screen-cap of the attack being conducted
 
 <img src='./honeypot.gif' title='Video Walkthrough' width='' alt='Video Walkthrough Honeypot' />
+
 ## Attack
-```
-For the demonstration, I used a tool called nmap to port scan the kali linux VM with the intense flag set (nmap -T4 A -v 10.0.2.15). Sure enough the intrusions were detected and were logged. Afterwards, I tried to telnet into the Kali VM and was forced out with an alert message that I setup from the configuration.
-```
+    For the demonstration, I used a tool called nmap to port scan the kali linux VM with the intense flag set (nmap -T4 A -v 10.0.2.15). Sure enough the intrusions were detected and were logged. Afterwards, I tried to telnet into the Kali VM and was forced out with an alert message that I setup from the configuration.
 
 ### TODO: Features
 - Honeypot
