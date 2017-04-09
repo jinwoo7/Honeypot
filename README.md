@@ -19,14 +19,12 @@ Time spent: **3** hours spent in total
     configured a saftey kit application/IDS called "PenTBox". I followed 
     the honeypot installation guide from www.iexplo1t.com. First step was 
     to install the pentbox-1.8 by using the wget command: 
-```
-wget http://downloads.sourceforge.net/project/pentbox18realised/pentbox-1.8.tar.gz
-```
+    wget http://downloads.sourceforge.net/project/pentbox18realised/pentbox-1.8.tar.gz
+
     The next step is to uncompress the pentbox files by using the following 
     command:
-```
-tar -zxvf pentbox-1.8.tar.gz
-```
+    tar -zxvf pentbox-1.8.tar.gz
+
     Once that is done, go into pentbo-1.8 directory and run the pentbox's ruby
     script called: pentbox.rb. Next part is to configure the honeypot. On the 
     first menu screen, type "2" to select the option 2-Network tools. On the 
